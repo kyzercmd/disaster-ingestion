@@ -47,3 +47,11 @@ MERGE_BASE: c7a3e2a69a33b241b6fece1fc2a54d30611e8600
 - index.css: full Bangladesh govt-portal design system (green #006A4E, red #F42A41)
 - App.tsx: BrowserRouter with Navbar (bilingual), Footer, 5 routes
 - Stub pages created for all 5 routes (Task 6 will replace them)
+
+## Task 6: complete (commits 64d6715..8ed2a5a, build clean 83 modules 0 errors, review clean)
+- Home.tsx: summary stats from GET /api/events/summary, by-division and by-year tables, CTA buttons
+- AddEvent.tsx: full form with all 15 fields, bilingual hazard labels (Bengali), validation feedback
+- UploadCsv.tsx: drag-and-drop zone, parallel validation results display, sample CSV download
+- DownloadData.tsx: record count badge, schema reference table, one-click CSV download
+- About.tsx: purpose, technical architecture, OOP pillars listed, data sources
+- Note: npm via ~/.nvm/versions/node/v20.20.2 — subagents must use `source ~/.nvm/nvm.sh && nvm use 20`
