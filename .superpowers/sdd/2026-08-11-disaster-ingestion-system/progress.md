@@ -25,3 +25,10 @@ MERGE_BASE: c7a3e2a69a33b241b6fece1fc2a54d30611e8600
 - StrictEventValidator extends BasicEventValidator: source_url http check, severity_category enum
 - EventValidationService interface
 - SimpleEventValidationService: wraps StrictEventValidator, throws InvalidEventException
+
+## Task 3: complete (commits e992fc3..734fcac, 2 new tests / 16 total, review clean)
+- EventRepository interface (save, findAll, existsById, getSummary)
+- CsvEventRepository: synchronized save, CSV read/write via Apache Commons CSV
+- ThreadPoolConfig: @Bean ExecutorService fixedThreadPool (4 threads, destroyMethod=shutdown)
+- ValidatorConfig: @Bean EventValidator (StrictEventValidator)
+- CsvUploadService: processUpload with ExecutorService.invokeAll(), InterruptedException + ExecutionException handling, computeDerived (duration_days, economic_loss_usd)
