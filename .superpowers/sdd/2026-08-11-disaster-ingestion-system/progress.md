@@ -39,3 +39,11 @@ MERGE_BASE: c7a3e2a69a33b241b6fece1fc2a54d30611e8600
 - EventController: POST /api/events, POST /api/events/upload, GET /api/events (CSV download), GET /api/events/summary
 - computeDerived: duration_days and economic_loss_usd computed on single-event add
 - EventControllerTest: @WebMvcTest slice, 2 tests passing
+
+## Task 5: complete (commits d8fba2f..64d6715, build success, review clean)
+- Vite + React 18 + TypeScript + Axios + React Router DOM
+- types/disaster.ts: DisasterEvent, UploadResult, Summary interfaces
+- api/client.ts: addEvent, uploadCsv, downloadCsv, getSummary
+- index.css: full Bangladesh govt-portal design system (green #006A4E, red #F42A41)
+- App.tsx: BrowserRouter with Navbar (bilingual), Footer, 5 routes
+- Stub pages created for all 5 routes (Task 6 will replace them)
