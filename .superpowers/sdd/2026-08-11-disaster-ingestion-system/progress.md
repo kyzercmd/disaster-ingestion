@@ -11,3 +11,9 @@ MERGE_BASE: c7a3e2a69a33b241b6fece1fc2a54d30611e8600
 - [ ] Task 6: Frontend Pages
 - [ ] Task 7: Maven Wrapper + Integration Smoke Test
 
+
+## Task 1: complete (commits c7a3e2a..caaf2b0, 2 tests passed, review clean)
+- DisasterEvent.java with all 15 fields + getters/setters
+- Exception hierarchy: DisasterDataException → InvalidEventException, CsvParseException, StorageException
+- Maven wrapper generated (./mvnw)
+- JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 (already installed, just not on PATH)
