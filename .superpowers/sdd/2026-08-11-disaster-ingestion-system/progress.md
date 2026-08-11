@@ -32,3 +32,10 @@ MERGE_BASE: c7a3e2a69a33b241b6fece1fc2a54d30611e8600
 - ThreadPoolConfig: @Bean ExecutorService fixedThreadPool (4 threads, destroyMethod=shutdown)
 - ValidatorConfig: @Bean EventValidator (StrictEventValidator)
 - CsvUploadService: processUpload with ExecutorService.invokeAll(), InterruptedException + ExecutionException handling, computeDerived (duration_days, economic_loss_usd)
+
+## Task 4: complete (commits 734fcac..d8fba2f, 18/18 tests, review clean)
+- CorsConfig: allows http://localhost:5173 on /api/**
+- GlobalExceptionHandler (@RestControllerAdvice): maps InvalidEventException→400, CsvParseException→400, StorageException→500, Exception→500
+- EventController: POST /api/events, POST /api/events/upload, GET /api/events (CSV download), GET /api/events/summary
+- computeDerived: duration_days and economic_loss_usd computed on single-event add
+- EventControllerTest: @WebMvcTest slice, 2 tests passing
