@@ -55,3 +55,19 @@ MERGE_BASE: c7a3e2a69a33b241b6fece1fc2a54d30611e8600
 - DownloadData.tsx: record count badge, schema reference table, one-click CSV download
 - About.tsx: purpose, technical architecture, OOP pillars listed, data sources
 - Note: npm via ~/.nvm/versions/node/v20.20.2 — subagents must use `source ~/.nvm/nvm.sh && nvm use 20`
+
+## Task 7: complete (commits 8ed2a5a..74e39db, 5/5 smoke tests passed, review clean)
+- README.md: quick start, API table, CSV schema, OOP design table, multi-threading, exception handling
+- Backend: 18/18 tests pass (BUILD SUCCESS)
+- Frontend: npm run build clean (83 modules, 245ms)
+- Integration smoke tests ALL PASSED:
+  1. GET /api/events/summary → empty {total:0}
+  2. POST /api/events → 201, durationDays=15, economicLossUsd=9090.90...
+  3. GET /api/events/summary → {total:1, byHazardType:{flood:1}, byDivision:{Dhaka:1}}
+  4. Duplicate event_id → 400 {"error":"Duplicate event_id: BD-FLOOD-2024-SMOKE"}
+  5. Invalid hazardType "tornado" → 400
+- CSV reset to header-only after smoke test
+
+## ALL TASKS COMPLETE
+MERGE_BASE: c7a3e2a69a33b241b6fece1fc2a54d30611e8600
+FINAL HEAD:  74e39db8efad1b47964731a691b3defd01b064c8
