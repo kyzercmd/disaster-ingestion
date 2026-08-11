@@ -1,4 +1,5 @@
 /home/kaiser/dev/disaster-ingestion/backend/src/test/java/com/bd/disaster/model/DisasterEventTest.java
 /home/kaiser/dev/disaster-ingestion/backend/src/test/java/com/bd/disaster/validation/BasicEventValidatorTest.java
+/home/kaiser/dev/disaster-ingestion/backend/src/test/java/com/bd/disaster/service/CsvUploadServiceTest.java
 /home/kaiser/dev/disaster-ingestion/backend/src/test/java/com/bd/disaster/validation/StrictEventValidatorTest.java
 /home/kaiser/dev/disaster-ingestion/backend/src/test/java/com/bd/disaster/service/SimpleEventValidationServiceTest.java

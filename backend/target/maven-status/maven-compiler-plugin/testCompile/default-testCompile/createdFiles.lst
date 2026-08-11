@@ -1,4 +1,5 @@
 com/bd/disaster/validation/BasicEventValidatorTest.class
+com/bd/disaster/service/CsvUploadServiceTest.class
 com/bd/disaster/validation/StrictEventValidatorTest.class
 com/bd/disaster/model/DisasterEventTest.class
 com/bd/disaster/service/SimpleEventValidationServiceTest.class

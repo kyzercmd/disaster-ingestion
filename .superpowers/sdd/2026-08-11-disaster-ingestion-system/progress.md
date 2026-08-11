@@ -17,3 +17,11 @@ MERGE_BASE: c7a3e2a69a33b241b6fece1fc2a54d30611e8600
 - Exception hierarchy: DisasterDataException → InvalidEventException, CsvParseException, StorageException
 - Maven wrapper generated (./mvnw)
 - JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 (already installed, just not on PATH)
+
+## Task 2: complete (commits caaf2b0..e992fc3, 12 tests passed, review clean)
+- ValidationResult (ok/fail static factory)
+- EventValidator interface
+- BasicEventValidator: required fields, hazard type, division (8 valid), numeric ranges, date order
+- StrictEventValidator extends BasicEventValidator: source_url http check, severity_category enum
+- EventValidationService interface
+- SimpleEventValidationService: wraps StrictEventValidator, throws InvalidEventException
